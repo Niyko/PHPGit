@@ -5,9 +5,18 @@ PHPGit is a web based terminal that can be used to push from your hosting server
 To install PHPGit, Just clone or download the zip of this repo and put it in your server. PHPGit doesn't have any dependency, It will work on `PHP 5.xx >`
 Then run the `index.php` file.
 
+# Basic usage
+1) Download the .zip of the master and decompress it in the server, open the folder in the browser
+1) Type and enter `git init [FOLDER YOU WANT TO PUSH]`
+1) Type and enter `git repo [GITHUB REPO URL]`, read below for more info
+1) Type and enter `git key [GITHUB PERSONAL ACCESS TOKEN]`, read below for more info
+1) Type and enter `git commit [COMMIT MESSAGE]`
+1) Type and enter `git push`
+
 # Commands
 ## git init
 Used to point to the folder in the server which have to be uploaded to Github
+> Please note, PHPGit use its folder as base url, So don't forget to use `../` when needed
 `````
 git init [DIR PATH]
 `````
@@ -82,6 +91,7 @@ git pass [PASSWORD]
 `````
 git pass abcd
 `````
+
 # Config.php
 Config.php has some global variables which can be used to set some default values to the `Repo link, Personal access key, etc`. It is not necessary to edit this files. Uses of each variable in the `config.php` is given below
 
