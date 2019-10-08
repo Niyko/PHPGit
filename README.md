@@ -73,7 +73,8 @@ git view
 git view
 `````
 ## git pass
-Used to authenticate you to the server if you set any password in the `config.php` file. Note that this is not your github password, This password is used to authenticaye between the admin (YOU) and the (YOUR) server. You can set the password in the `config.php` file. For more read below.
+Used to authenticate you to the server if you set any password in the `config.php` file. 
+> Note that this is not your github password, This password is used to authenticaye between the admin (YOU) and the (YOUR) server. You can set the password in the `config.php` file. For more read below.
 `````
 git pass [PASSWORD]
 `````
@@ -81,3 +82,15 @@ git pass [PASSWORD]
 `````
 git pass abcd
 `````
+# Config.php
+Config.php has some global variables which can be used to set some default values to the `Repo link, Personal access key, etc`. It is not necessary to edit this files. Uses of each variable in the `config.php` is given below
+
+| Variable | Use | Example value |
+| --- | --- | --- |
+| `$DEFUALT_GITHUB_REPO` | Used to set a default value to repo url. Can be used from the command `git repo default` | https://github.com/Niyko/PHPGit.git |
+| `$DEFUALT_GITHUB_AUTH_KEY` | Used to set a default value to personal access token. Can be used from the command `git key default` | 87dsys]8cd87cd6t326t23r78 |
+| `$DEFUALT_GITHUB_COMMIT_MESSAGE` | Used to set a default value to the commit message. Can be used from the command `git commit default` | First commit |
+| `$DEFUALT_PASSWORD` | Used to set a password to the terminal. If you set a password string in this variable, Then you can push or commit from the terminal after you authenticated through the command `git pass [PASSWORD]` | abcd |
+
+# License
+PHPGit is licensed under the [MIT License](https://github.com/Niyko/PHPGit/blob/master/LICENSE).
