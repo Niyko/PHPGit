@@ -93,4 +93,4 @@ Config.php has some global variables which can be used to set some default value
 | `$DEFUALT_PASSWORD` | Used to set a password to the terminal. If you set a password string in this variable, Then you can push or commit from the terminal after you authenticated through the command `git pass [PASSWORD]` | abcd |
 
 # License
-PHPGit is licensed under the [MIT License](https://github.com/Niyko/PHPGit/blob/master/LICENSE).
+PHPGit is licensed under the [GNU GENERAL PUBLIC LICENSE](https://github.com/Niyko/PHPGit/blob/master/LICENSE).
