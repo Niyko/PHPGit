@@ -16,3 +16,68 @@ git init [DIR PATH]
 git init helloworld
 git init ../abc/helloworld
 `````
+## git repo
+Used to set the repository url of the github repo. The files from the server will be pushed to this repository. Give the github repository clone link `(eg: https://github.com/Niyko/PHPGit.git)`
+`````
+git repo [REPO URL]
+`````
+*Examples:* 
+`````
+git repo https://github.com/Niyko/PHPGit.git
+`````
+## git commit
+Used to set the commit changes message, Same as github commit changes text
+`````
+git commit [MSG]
+`````
+*Examples:* 
+`````
+git commit first commit
+git commit something changed
+`````
+## git key
+Used to set the github personal access token to authenticate the user with github. You can create one from https://github.com/settings/tokens 
+For more help to create a key, read this https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line
+`````
+git key [PERSONAL ACCESS TOKEN]
+`````
+*Examples:* 
+`````
+git key 3j3484j45843u4574y3e6etwq5wq7fru7
+`````
+## git push
+Used to push the files from server to the server to the github repo
+`````
+git push
+`````
+*Examples:* 
+`````
+git push
+`````
+## git clear
+Used to clear the terminal screen
+`````
+git clear
+`````
+*Examples:* 
+`````
+git clear
+`````
+## git view
+Used to print all currently set variables like `Repo link, Personal access key, etc`
+`````
+git view
+`````
+*Examples:* 
+`````
+git view
+`````
+## git pass
+Used to authenticate you to the server if you set any password in the `config.php` file. Note that this is not your github password, This password is used to authenticaye between the admin (YOU) and the (YOUR) server. You can set the password in the `config.php` file. For more read below.
+`````
+git pass [PASSWORD]
+`````
+*Examples:* 
+`````
+git pass abcd
+`````
